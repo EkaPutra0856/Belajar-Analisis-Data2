@@ -8,7 +8,7 @@ sns.set(style='dark')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Load dataset utama (clean_day.csv)
-day_data = pd.read_csv('../dashboard/clean_day.csv')
+day_data = pd.read_csv('clean_day.csv')
 
 # Mengubah kolom date menjadi datetime
 day_data['date'] = pd.to_datetime(day_data['date'])
@@ -62,7 +62,7 @@ Musim panas memiliki jumlah penyewaan sepeda tertinggi, sementara musim dingin p
 st.subheader("Hourly Bike Rentals")
 
 # Load dataset hour
-hour_data = pd.read_csv('../dashboard/clean_hour.csv')
+hour_data = pd.read_csv('clean_hour.csv')
 
 # Mengubah kolom date menjadi datetime
 hour_data['date'] = pd.to_datetime(hour_data['date'])
